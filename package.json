@@ -1,0 +1,64 @@
+{
+    "name": "@vorlefan/google-news",
+    "version": "0.3.0",
+    "description": "Crawler for the newest news from google newspaper RSS",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "author": {
+        "name": "Michael Willian Santos",
+        "email": "dax-soft@live.com",
+        "url": "https://daxsoft.github.io/"
+    },
+    "keywords": [
+        "google",
+        "news",
+        "crawler",
+        "api",
+        "scraper",
+        "robot",
+        "newspaper",
+        "google-news"
+    ],
+    "license": "MIT",
+    "private": false,
+    "devDependencies": {
+        "@babel/core": "lastest",
+        "@types/jest": "lastest",
+        "@types/node": "lastest",
+        "@typescript-eslint/eslint-plugin": "lastest",
+        "@typescript-eslint/parser": "lastest",
+        "babel-loader": "lastest",
+        "bundlesize": "lastest",
+        "eslint": "lastest",
+        "eslint-config-prettier": "lastest",
+        "eslint-plugin-prettier": "lastest",
+        "jest": "lastest",
+        "nodemon": "lastest",
+        "ts-jest": "lastest",
+        "ts-loader": "lastest",
+        "typescript": "lastest",
+        "webpack": "lastest",
+        "webpack-cli": "lastest"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "webpack --mode production & yarn run size",
+        "lint": "eslint './src/**/*.{js,ts,tsx}'",
+        "test": "jest",
+        "test:watch": "jest --watchAll",
+        "watch": "tsc -w",
+        "start": "npm link && nodemon",
+        "semantic-release": "semantic-release",
+        "size": "bundlesize"
+    },
+    "files": [
+        "dist/**/*"
+    ],
+    "repository": "daxsoft/path_route",
+    "dependencies": {
+        "@vorlefan/path": "^1.7.0",
+        "xml2json": "^0.12.0"
+    }
+}
