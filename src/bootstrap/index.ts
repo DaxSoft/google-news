@@ -133,7 +133,6 @@ export class GoogleNews {
                 this._options.language || 'en-US',
                 this._options.localization || 'US'
             );
-            console.log(this._url);
             await this.dowload();
             await this.load();
             this.collect();

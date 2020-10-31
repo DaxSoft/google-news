@@ -1,3 +1,7 @@
+# 0.3.4
+
+-   Fix Build bugs
+
 # 0.3.0
 
 -   Initial release

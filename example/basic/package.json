@@ -1,0 +1,14 @@
+{
+    "name": "google-news",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@vorlefan/google-news": "^0.3.3",
+        "@vorlefan/path": "^1.7.0",
+        "xml2json": "^0.12.0"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
+}

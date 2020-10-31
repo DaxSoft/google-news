@@ -1,0 +1,29 @@
+const path = require('path');
+const webpack = require('webpack');
+
+module.exports = {
+    mode: 'production',
+    entry: './src/index.ts',
+    output: {
+        path: path.resolve('dist'),
+        filename: 'index.js',
+        libraryTarget: 'commonjs',
+    },
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                exclude: /(node_modules)/,
+                use: 'ts-loader',
+            },
+        ],
+    },
+    resolve: {
+        extensions: ['.ts', '.js'],
+    },
+    target: 'node',
+    plugins: [
+        // This is the important part for onoff to work
+        new webpack.ExternalsPlugin('commonjs', ['onoff']),
+    ],
+};
