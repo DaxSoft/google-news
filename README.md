@@ -2,18 +2,18 @@
 
 Easy peasy way to get the most recent news from Google Newspaper RSS
 
-[![https://badgen.net/bundlephobia/minzip/@vorlefan/google-news](https://badgen.net/bundlephobia/minzip/@vorlefan/google-news)](https://bundlephobia.com/result?p=@vorlefan/google-news)]
+[![https://badgen.net/bundlephobia/minzip/@vorlefan/google-news](https://badgen.net/bundlephobia/minzip/@vorlefan/google-news)](https://bundlephobia.com/result?p=@vorlefan/google-news)
 
 With [npm](https://npmjs.org) do:
 
 ```
-npm install @vorlefan/google-news
+npm install @vorlefan/google-news @vorlefan/path xml2json
 ```
 
 With [yarn](https://yarnpkg.com/en/) do:
 
 ```
-yarn add  @vorlefan/google-news
+yarn add  @vorlefan/google-news @vorlefan/path xml2json
 ```
 
 <hr>
